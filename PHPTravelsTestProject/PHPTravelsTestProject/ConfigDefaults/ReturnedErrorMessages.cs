@@ -22,5 +22,18 @@ namespace PHPTravelsTestProject.ConfigDefaults
         }
 
 
+        //return message when adding to wishlist without login
+        public static class InvalidAddingToWishlistWithoutLogin
+        {
+            public static string message = "Please Login to add to wishlist.";
+        }
+
+
+        //return message for AddingToWishListwithout login
+        public static class InvalidAddToWishListWithoutLogin
+        {
+            public static string message = "Please Login to add to wishlist.";
+        }
+
     }
 }

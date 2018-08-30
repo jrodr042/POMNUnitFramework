@@ -11,8 +11,6 @@ namespace PHPTravelsTestProject.UIElements
             PageFactory.InitElements(driver, this);
         }
 
-        
-
 
         //define each ui elements
         [FindsBy(How = How.CssSelector, Using = "#collapse1 > div.hpadding20 > div > div:nth-child(1)")]
@@ -40,6 +38,13 @@ namespace PHPTravelsTestProject.UIElements
         [FindsBy(How = How.CssSelector, Using = "#searchform")]
         public IWebElement SearchButton { get; set; }
 
+
+        /* 
+            This is the table ui which displays all hotels search
+         */
+
+        [FindsBy(How = How.ClassName, Using = "itemscontainer")]
+        public IWebElement HotelTable { get; set; }
 
 
 

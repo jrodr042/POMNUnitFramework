@@ -9,6 +9,7 @@ C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProj
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\bin\Debug\nunit.framework.xml
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\bin\Debug\WebDriver.xml
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\bin\Debug\WebDriver.Support.xml
+C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\obj\Debug\PHPTravelsTestProject.csprojResolveAssemblyReference.cache
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\obj\Debug\PHPTravelsTestProject.csproj.CoreCompileInputs.cache
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\obj\Debug\PHPTravelsTestProject.csproj.CopyComplete
 C:\Users\RxSafe-QA-2\Desktop\PersonalProjects\PHPTravelsTests\PHPTravelsTestProject\PHPTravelsTestProject\obj\Debug\PHPTravelsTestProject.exe
