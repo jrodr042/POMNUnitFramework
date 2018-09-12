@@ -38,6 +38,9 @@ namespace PHPTravelsTestProject.UIElements.NavigationBar
         [FindsBy(How = How.XPath, Using = "/html/body/nav//*[@id=\"li_myaccount\"]")]
         public IWebElement myAccount { get; set; }
 
+        [FindsBy(How = How.XPath, Using = "//*[@id=\"collapse\"]/ul[2]/ul/li[1]/a")]
+        public IWebElement LoggedInAccount { get; set; }
+
    
     }
 }

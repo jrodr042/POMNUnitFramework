@@ -19,6 +19,13 @@ namespace PHPTravelsTestProject
         }
 
 
+        public static IWebDriver InitializePartialDriver()
+        {
+            IWebDriver driver = new ChromeDriver();
+            return driver;
+        }
+
+
 
 
     }

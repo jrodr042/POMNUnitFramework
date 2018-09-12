@@ -15,6 +15,32 @@ namespace PHPTravelsTestProject.Scenarios
 
         IWebDriver Driver { get; set; }
         AccountElements accountObject;
+
+
+        public void PartialInitializerSignUp(IWebDriver driver)
+        {
+
+            NavigateTo.NavigateToSignUp(driver);
+            accountObject = new AccountElements(driver);
+        }
+
+        public void PartialValidSignUp(IWebDriver driver)
+        {
+
+            //populate all the values in the sign up form
+            accountObject.firstName.SendKeys(TestVariables.Credentials.ValidSignUp.name);
+            accountObject.lastName.SendKeys(TestVariables.Credentials.ValidSignUp.lastName);
+            accountObject.Email.SendKeys(TestVariables.Credentials.ValidSignUp.email);
+            accountObject.password.SendKeys(TestVariables.Credentials.ValidSignUp.password);
+            accountObject.confirmPassword.SendKeys(TestVariables.Credentials.ValidSignUp.repeatPassword);
+            accountObject.phoneNumber.SendKeys(TestVariables.Credentials.ValidSignUp.phoneNumber);
+
+            //click the submit button
+            accountObject.submitButton.Click();
+
+            Thread.Sleep(5000);
+
+        }
    
 
         [SetUp]
@@ -70,21 +96,29 @@ namespace PHPTravelsTestProject.Scenarios
             Thread.Sleep(3000);
         }
 
-        //[Test]
-        //public void TestValidSignUp()
-        //{
-        //    Console.WriteLine("Testing");
+        [Test]
+        public void TestValidSignUp()
+        {
+            Console.WriteLine("Testing");
 
-        //    //populate all the values in the sign up form
-        //    accountObject.firstName.SendKeys(TestVariables.Credentials.ValidSignUp.name);
-        //    accountObject.lastName.SendKeys(TestVariables.Credentials.ValidSignUp.lastName);
-        //    accountObject.Email.SendKeys(TestVariables.Credentials.ValidSignUp.email);
-        //    accountObject.password.SendKeys(TestVariables.Credentials.ValidSignUp.password);
-        //    accountObject.confirmPassword.SendKeys(TestVariables.Credentials.ValidSignUp.repeatPassword);
-        //    accountObject.phoneNumber.SendKeys(TestVariables.Credentials.ValidSignUp.phoneNumber);
+            //populate all the values in the sign up form
+            accountObject.firstName.SendKeys(TestVariables.Credentials.ValidSignUp.name);
+            accountObject.lastName.SendKeys(TestVariables.Credentials.ValidSignUp.lastName);
+            accountObject.Email.SendKeys(TestVariables.Credentials.ValidSignUp.email);
+            accountObject.password.SendKeys(TestVariables.Credentials.ValidSignUp.password);
+            accountObject.confirmPassword.SendKeys(TestVariables.Credentials.ValidSignUp.repeatPassword);
+            accountObject.phoneNumber.SendKeys(TestVariables.Credentials.ValidSignUp.phoneNumber);
 
-        //    Thread.Sleep(3000);
-        //}
+            //click the submit button
+            accountObject.submitButton.Click();
+
+            Thread.Sleep(5000);
+
+            var retMessage = Driver.Url;
+            Assert.AreEqual(TestVariables.ValidUrlOnLogin.validUrl, retMessage);
+
+            Thread.Sleep(3000);
+        }
 
 
 
