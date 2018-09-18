@@ -52,7 +52,7 @@ namespace PHPTravelsTestProject.Scenarios
 
 
         [Test]
-        public void TestInvalidLoginEmail()
+        public void _04_TestInvalidLoginEmail()
         {
             accountObject.emailForLogin.SendKeys(TestVariables.Credentials.InvalidEmail.email);
             accountObject.passwordForLogin.SendKeys(TestVariables.Credentials.ValidLogin.password);
@@ -71,7 +71,7 @@ namespace PHPTravelsTestProject.Scenarios
         }
 
         [Test]
-        public void TestValidLogin()
+        public void _05_TestValidLogin()
         {
             accountObject.emailForLogin.SendKeys(TestVariables.Credentials.ValidLogin.email);
             accountObject.passwordForLogin.SendKeys(TestVariables.Credentials.ValidLogin.password);

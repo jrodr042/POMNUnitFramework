@@ -10,8 +10,9 @@ namespace PHPTravelsTestProject
         //initialize the webdriver
         public static IWebDriver InitializeDriver()
         {
-            IWebDriver driver = new ChromeDriver();
-
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--start-maximized");
+            IWebDriver driver = new ChromeDriver(options);
             driver.Navigate().GoToUrl(ConfigDefaults.BaseUrl.DefaultUrl);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 

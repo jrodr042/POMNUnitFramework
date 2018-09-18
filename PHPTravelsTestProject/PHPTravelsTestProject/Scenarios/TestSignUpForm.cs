@@ -52,7 +52,7 @@ namespace PHPTravelsTestProject.Scenarios
         }
 
         [Test]
-        public void TestInvalidPasswordSignUp()
+        public void _01_TestInvalidPasswordSignUp()
         {
             //populate all the values in the sign up form
             accountObject.firstName.SendKeys(TestVariables.Credentials.ValidSignUp.name);
@@ -75,7 +75,7 @@ namespace PHPTravelsTestProject.Scenarios
         }
 
         [Test]
-        public void TestInvalidEmail()
+        public void _02_TestInvalidEmailSignUp()
         {
             //populate all the values in the sign up form
             accountObject.firstName.SendKeys(TestVariables.Credentials.ValidSignUp.name);
@@ -97,7 +97,7 @@ namespace PHPTravelsTestProject.Scenarios
         }
 
         [Test]
-        public void TestValidSignUp()
+        public void _03_TestValidSignUp()
         {
             Console.WriteLine("Testing");
 

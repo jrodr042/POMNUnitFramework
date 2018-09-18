@@ -18,6 +18,7 @@ namespace PHPTravelsTestProject
 
         public static void NavigateToFlights(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to Flights page.");
             SocialAppsIconLinks links = new SocialAppsIconLinks(driver);
 
             links.FacebookIcon.Click();
@@ -28,6 +29,7 @@ namespace PHPTravelsTestProject
         //naigate to the hotels main page
         public static void NavigateToHotels(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to Hotels page.");
             NavBar navBar = new NavBar(driver);
 
             navBar.Hotels.Click();
@@ -38,6 +40,7 @@ namespace PHPTravelsTestProject
 
         public static void NavigateToSignUp(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to Sign-up Page.");
             NavBar navBar = new NavBar(driver);
             navBar.myAccount.Click();
 
@@ -48,6 +51,7 @@ namespace PHPTravelsTestProject
 
         public static void NavigateBackToProfileWhenLogin(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to Profile page while logged in.");
             NavBar navBar = new NavBar(driver);
             navBar.LoggedInAccount.Click();
 
@@ -60,6 +64,7 @@ namespace PHPTravelsTestProject
 
         public static void NavigateToLogin(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to Login page.");
             NavBar navBar = new NavBar(driver);
             navBar.myAccount.Click();
 
@@ -72,10 +77,11 @@ namespace PHPTravelsTestProject
 
         public static void NavigateToItemOnHotelSearch(IWebDriver driver)
         {
+            Console.WriteLine(":: Navigating to first item on Hotel page.");
             //initialize navbar
             NavBar navBar = new NavBar(driver);
             navBar.Hotels.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(300);
 
             //initialize hotelsPage
             hotelPage = new HotelsFilterSearch(driver);

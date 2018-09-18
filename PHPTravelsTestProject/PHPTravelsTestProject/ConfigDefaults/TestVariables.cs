@@ -31,8 +31,8 @@ namespace PHPTravelsTestProject.ConfigDefaults
             public static class ValidLogin
             {
                 //test credentials for a valid login account
-                public static string email = "zivekuju@pay-mon.com";
-                public static string password = "PHPTravels";
+                public static string email = "example@example.com";
+                public static string password = "admin1!";
             }
 
 
@@ -56,6 +56,31 @@ namespace PHPTravelsTestProject.ConfigDefaults
         {
             public static string validUrl = "https://www.phptravels.net/account/";
         }
+
+
+        /*
+         * Variables for Hotel Details Page
+         */ 
+
+        public static class HotelReviewVariables
+        {
+            public static string name = "TestName";
+            public static string email = "example@example.com";
+            public static string comment = "This hotel is cool! I would recommend it!";
+
+        }
+
+        public static class HotelReviewAverage
+        {
+            public static string Clean = "5";
+            public static string Confort = "6";
+            public static string Location = "6";
+            public static string Facilities = "7";
+            public static string Staff = "8";
+            public static string CorrectAverage = "6.4";
+
+        }
+
    
     }
 }
