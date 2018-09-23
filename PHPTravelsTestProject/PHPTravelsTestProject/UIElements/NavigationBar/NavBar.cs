@@ -14,7 +14,11 @@ namespace PHPTravelsTestProject.UIElements.NavigationBar
         [FindsBy(How = How.CssSelector, Using = "#collapse > ul:nth-child(1) > li.active > a")]
         public IWebElement Home { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "#collapse > ul:nth-child(1) > li:nth-child(2) > a")]
+        //*[@id="collapse"]/ul[1]/li[2]/a
+        //*[@id="collapse"]/ul[1]/li[2]/a
+
+
+        [FindsBy(How = How.XPath, Using = "//*[@id=\"collapse\"]/ul[1]/li[2]/a")]
         public IWebElement Hotels { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#collapse > ul:nth-child(1) > li:nth-child(3) > a")]

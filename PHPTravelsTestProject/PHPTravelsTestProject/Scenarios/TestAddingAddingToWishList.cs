@@ -52,13 +52,15 @@ namespace PHPTravelsTestProject.Scenarios
         [Test]
         public void TestAddToWishListWhileLogin()
         {
-            TestSignUpForm testSignUpForm = new TestSignUpForm();
-            testSignUpForm.PartialInitializerSignUp(Driver);
-            testSignUpForm.PartialValidSignUp(Driver);
+            TestLoginForm testSignUpForm = new TestLoginForm();
+            testSignUpForm.PartialInitializer(Driver);
+            testSignUpForm.PartialLoginFunction(Driver);
+
+            Thread.Sleep(1000);
 
             NavigateTo.NavigateToItemOnHotelSearch(Driver);
             hotelInfo = new HotelDetailsPage(Driver);
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
 
             //get the name of the current hotel detail item
             HotelName = hotelInfo.HotelNameTitle.Text;

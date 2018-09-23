@@ -26,18 +26,12 @@ namespace PHPTravelsTestProject.Scenarios
 
         public void PartialLoginFunction(IWebDriver Driver)
         {
-            accountObject.emailForLogin.SendKeys(TestVariables.Credentials.InvalidEmail.email);
+            accountObject.emailForLogin.SendKeys(TestVariables.Credentials.ValidLogin.email);
             accountObject.passwordForLogin.SendKeys(TestVariables.Credentials.ValidLogin.password);
 
 
             Thread.Sleep(1000);
             accountObject.loginButton.Click();
-
-            Thread.Sleep(1000);
-            var retMessage = accountObject.returnMessageLogin.Text;
-
-            Assert.AreEqual(ReturnedErrorMessages.InvalidCredentialsInLogin.message, retMessage);
-            Thread.Sleep(3000);
 
         }
 

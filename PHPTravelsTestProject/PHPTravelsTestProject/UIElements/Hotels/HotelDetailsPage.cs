@@ -29,7 +29,7 @@ namespace PHPTravelsTestProject.UIElements
         [FindsBy(How = How.CssSelector, Using = "#body-section > div.header-mob > div > div > div.col-xs-8.col-sm-7 > div > span:nth-child(1) > strong > span")]
         public IWebElement HotelNameTitle { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "//*[@id=\"OVERVIEW\"]/div[1]/div[3]/div/div[1]/div[1]/div[2]")]
+        [FindsBy(How = How.XPath, Using = "//*[@id=\"OVERVIEW\"]/div[1]/div[3]/div/div[1]")]
         public IWebElement SlideShow { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//*[@id=\"OVERVIEW\"]/div[1]/div[3]/div/div[1]/div[2]")]
@@ -121,6 +121,9 @@ namespace PHPTravelsTestProject.UIElements
         [FindsBy(How = How.XPath, Using = "//*[@id=\"ADDREVIEW\"]/div/div[1]/a/span[2]")]
         public IWebElement CloseWriteReviewSectionButton { get; set; }
 
+        [FindsBy(How = How.CssSelector, Using = "#ADDREVIEW > div > div.panel-heading")]
+        public IWebElement ReviewSectionTitle { get; set; }
+
 
 
 
@@ -128,7 +131,7 @@ namespace PHPTravelsTestProject.UIElements
         /*
          * Add to wishlist
          */ 
-        [FindsBy(How = How.ClassName, Using = "addwishlist")]
+        [FindsBy(How = How.ClassName, Using = "wish")]
         public IWebElement AddToWishListButton { get; set; }
 
 

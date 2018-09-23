@@ -70,14 +70,24 @@ namespace PHPTravelsTestProject.ConfigDefaults
 
         }
 
-        public static class HotelReviewAverage
+        public static class HotelDetailsPageReviewSection
         {
-            public static string Clean = "5";
-            public static string Confort = "6";
-            public static string Location = "6";
-            public static string Facilities = "7";
-            public static string Staff = "8";
-            public static string CorrectAverage = "6.4";
+            public static class HotelReviewAverage
+            {
+                public static string Clean = "5";
+                public static string Confort = "6";
+                public static string Location = "6";
+                public static string Facilities = "7";
+                public static string Staff = "8";
+                public static string CorrectAverage = "6.4";
+
+            }
+            
+            public static class ReviewSectionTitle
+            {
+                //includes x due to the closing tag
+                public static string title = "WRITE REVIEW X";
+            }
 
         }
 

@@ -109,7 +109,7 @@ namespace PHPTravelsTestProject.Scenarios
                 while (go)
                 {
                     //wait for screenshot
-                    Thread.Sleep(100);
+                    Thread.Sleep(500);
                     //get the disabled class string
                     classString = hotelItem.NextSliderButton.GetAttribute("class");
                     if (classString.Equals(hotelItem.DisabledNextButton))

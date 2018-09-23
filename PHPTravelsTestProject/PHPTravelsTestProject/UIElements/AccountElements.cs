@@ -47,7 +47,7 @@ namespace PHPTravelsTestProject.UIElements
         /* 
             This fields are use for the login page of the application
              */
-        [FindsBy(How = How.CssSelector, Using = "#loginfrm > div.panel.panel-default > div.wow.fadeIn.animated > button")]
+        [FindsBy(How = How.ClassName, Using = "loginbtn")]
         public IWebElement loginButton { get; set; }
 
 

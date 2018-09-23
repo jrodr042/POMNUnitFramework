@@ -10,7 +10,8 @@ using System;
 
 namespace PHPTravelsTestProject.Scenarios
 {
-    class TestSignUpForm
+    
+    class _01_TestSignUpForm
     {
 
         IWebDriver Driver { get; set; }
